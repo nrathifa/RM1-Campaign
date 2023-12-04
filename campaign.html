@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM1 Campaign</title>
+</head>
+    <link rel = "stylesheet" href="campaign.css">
+    <script src="campaign.js"></script>
+<body>
+    <header>
+        <img src="iium.jpeg" alt="IIUM Logo" height="80" width="80">
+        <h2>RM1 Campaign</h2>
+        
+    </header>
+    <section>
+        <h2>RM1 Campaign</h2>
+        <div id = "image">
+            <img src="donation.jpeg" alt="donation" height="400" width="600">
+        </div>
+        <div id = "one">
+            <p>Let your contributions be <strong>PERPETUAL</strong> for the pleasure of Allah SWT</p>
+        </div>
+        <div id = "verse">
+            <p>"The example of those who spend their wealth in the way of Allah is like a seed 
+                [of grain] which grows seven spikes; in each spike is a hundred grains. 
+                And Allah multiplies [His reward] for whom He wills. 
+                And Allah is all-Encompassing and Knowing."</p>
+            <p>Quranic Verse: Al-Baqarah:261</p>
+        </div>
+            <a href="#form" class="cta-button">E-Donation</a>
+    </section>
+    <section>
+        <div id = "form">
+            <h2>Monthly Salary Deduction Form</h2>
+                <form id="salaryForm" onsubmit="return validateForm()">
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                        <p></p>
+                    <label for="staffNo">Staff No:</label>
+                    <input type="text" id="staffNo" name="staffNo" required>
+                        <p></p>
+                    <label for="contactno">Contact No. :</label>
+                    <input type="text" name="contactno" id="contactno">
+                        <p></p>
+                    <label for="email">Email :</label>
+                    <input type="text" name="email" id="email">
+                <div id = "number">
+                    <p></p>
+                    <label for="amount">Amount to be deducted (RM):</label>
+                    <input type="number" id="amount" name="amount" min="1" required>
+                        <p></p>
+                            <form action="/action_page.php"></form>
+                                <label for="startMonth">Deducted from (month and year):</label>
+                                <input type="month" id="startMonth" name="startMonth">
+                                <p></p>
+                            <form action="/action_page.php"></form>
+                                <label for="endMonth">Until (month and year):</label>
+                                <input type="month" id="endMonth" name="endMonth">
+
+                    <p></p>
+                    <label for="kulliyyah">For Kulliyyah of </label>
+                    <select id="kulliyyah" name="kulliyyah">
+                        <option value=""></option>
+                        <option value="koe">Engineering (KOE)</option>
+                        <option value="kict">Information and Communication Technology (KICT)</option>
+                        <option value="kaed">Architecture & Environmental Design (KAED)</option>
+                        <option value="kenms">Economics & Management Sciences (KENMS)</option>
+                        <option value="koed">Education (KOED)</option>
+                        <option value="irk">Abdul Hamid Abu Sulayman Kulliyyah of Islamic Revealed Knowledge and Human Sciences (IRKHS)</option>
+                        <option value="dentist">Dentistry</option>
+                        <option value="lang">Language Management</option>
+                    </select>
+                </div>
+                <p></p>
+                <input type="submit">
+                <p></p>
+
+        <a href="#contact" class="cta-button">Get in Touch</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+            Have questions? Feel free to reach out to us. We're here to help!
+        </p>
+        <p>Phone : 03 6196 4268</p>
+        <p>Email: <a href="mailto:ief@iium.edu.my">ief@iium.edu.my</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/ief.official/" target="_blank">www.facebook.com/ief.official/</a></p>
+        <p>Website: <a href="https://www.iium.edu.my/ief" target="_blank">www.iium.edu.my/ief</a></p>
+    </section>
+
+    <footer>
+        &copy; 2023 Your Startup. All rights reserved.
+    </footer>
+
+</body>
+</html>
